@@ -1,0 +1,362 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  flex-direction:column;
+  margin-top:4rem;
+    min-height:100vh;
+    height:fit-content;
+  height:100vh;
+  width:100vw;
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/photo-1504608524841-42fe6f032b4b.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:2rem;
+}
+.heading{
+  padding-top:1rem;
+  border-radius:1rem;
+  margin-bottom:3rem;
+  height: 8rem;
+  font-size:3rem;
+  color:#B9421E;
+  font-weight: bold;
+ text-shadow:2px 2px 6px black;
+   position:relative;
+   background: black;
+  width:85%;
+  padding-bottom:1rem;
+}
+  .heading::after{
+  text-shadow:none;
+  content:"Weather Analyzer";
+  position: absolute;
+  color:transparent;
+  top:3.5rem;
+  border-radius: 2rem;
+  width:100%;
+  
+  left:0px;
+  transform: rotateX(180deg);
+
+ background-image: linear-gradient(0, #777 , transparent 100%);
+ 
+ background-clip: text;
+ 
+ 
+ 
+}
+
+
+.container{
+  background-color:black;
+  opacity:0.8;
+  border-radius: 1rem;
+  width:85%;
+  display:flex;
+  flex-direction: column;
+  padding:2rem;
+}
+.search{
+  border:none;
+  outline:none;
+  background-color: transparent;
+  color:white;
+  font-size:1rem;
+}
+.search-box{
+  background:transparent;
+  height:2rem;
+  display:flex;
+  align-items: center;
+  width:fit-content;
+  border:1px solid grey;
+  border-radius: 0.9rem;
+  padding:1rem 0.3rem;
+}
+.search-btn{
+  height:1.7rem;
+  width:3rem;
+  color:white;
+  background-color: transparent;
+  border:none;
+  font-size: 1rem;
+  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+}
+.content{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction:column;
+  background-color: transparent;
+  margin-top: 2rem ;
+  
+}
+.current_update{
+  width:100%;
+  
+  display:flex;
+  background-color:transparent;
+  border-bottom: 1px solid grey;
+  align-items:center;
+  justify-content: space-between;
+}
+.location{
+  border-right:1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  color:white;
+  
+  background-color:transparent;
+  column-gap: 1rem;
+  width:40%;
+  padding:1rem;
+}
+.date_location{
+  display: flex;
+  
+  flex-direction:column;
+  align-items: flex-start;
+
+ 
+  padding:0.1rem;
+ gap:0.4rem;
+ width:100%;
+ 
+}
+.cntry_name{
+  color:white;
+  font-size: 2rem;
+  height:30%;
+  width:100%;
+}
+.date_location .day{
+  font-size: 0.7rem;
+  width:100%;
+}
+.icon{
+  height:50%;
+}
+.temp{
+  position:relative;
+  width:40%;
+  text-align: center;
+}
+.celcius label,.fahrenheit label{
+  font-size:2rem;
+  font-weight: 500;
+  
+}
+.celcius{
+  display:block;
+  position: absolute;
+  height:100%;
+  width:100%;
+}
+.fahrenheit {
+  display: none;
+}
+.compact-details{
+  height: 12rem;
+background: transparent;
+  display:grid;
+  height:100%;
+  width:60%;
+   gap:1rem;
+  justify-self: center;
+  
+  color:white;
+  font-size:1.1rem;
+ 
+  grid-template-columns: repeat(3,1fr);
+}
+.grid{
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  align-items: center;
+  gap:0.5rem;
+  background:#272C2D;
+  opacity:0.6;
+  margin:0.5rem;
+}
+.grid .display-block{
+  display:block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.forecast {
+  margin-top: 1rem;
+}
+
+.forecast h2 {
+  color: white;
+}
+
+.forecast-days {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.forecast-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.forecast-card:last-child {
+  margin-right: 0;
+}
+
+.forecast-card h3 {
+  font-size: 1.2rem;
+  color:white;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-card p {
+  margin-top: 0.5rem;
+  color: white;
+}
+@media (max-width:400px){
+  body{
+    margin-top:2rem;
+    min-height:100vh;
+    height:fit-content;
+    padding:2rem 0.4rem;
+    
+  }
+  .heading{
+    color:#1D89C3;
+    padding-top:1rem;
+    border-radius:1rem;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+    height:4rem;
+    
+  }
+  .heading::after{
+    color:transparent;
+    opacity:0.5;
+    background: linear-gradient(to bottom, #1D89C3, #ffffff);
+      background-clip: text;
+
+    top:2.3rem;
+   
+  }
+  .container {
+    width:90%;;
+    padding:1rem ;
+  }
+  .search{
+    font-size:0.7rem;
+  }
+  .search-box{
+    height:1.2rem;
+  }
+  .content{
+    
+    margin-top:1rem; 
+  }
+  .current_update{
+    flex-direction: column;
+    border:none;
+  }
+  .location{
+    border:none;
+    width:100%;
+  }
+  .date_location{
+    
+  }
+  .cntry_name{
+    font-size: 1.6rem;
+  }
+  .date_location .day{
+    font-size: 0.5rem;
+  }
+  .celcius label,.fahrenheit label{
+    font-size: 1.7rem;
+  }
+  .compact-details{
+     display:flex;
+     width:100%;
+     flex-direction: column;
+     gap:0;
+    }
+    .grid{
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      width:100%;
+      border-bottom: 1px solid grey;
+      background: none;
+      margin:0.1rem;
+      padding:0.6rem 2rem;
+    }
+    .grid .display-block{
+      font-size: 1rem;
+    }
+    .grid label{
+      display:block;
+     
+     width:50%;
+     text-align:center;
+    }
+    .forecast{
+      margin-top:0.5rem;
+      
+      
+    }
+    .forecast h2 {
+      padding:0 1rem;
+      font-size:1.4rem;
+    }
+    
+    .forecast-days{
+      animation: all 1s ease;
+     flex-direction: column;
+     
+     
+    }
+    
+    .forecast-card {
+      padding:0.4rem 1rem;
+      display:flex;
+      align-items: center;
+      margin-bottom: 0.3rem;
+       }
+   .forecast-card h3 {
+      font-size: 0.8rem;
+   }
+   .forecast-card p {
+     margin-left: 0.2rem;
+     font-size: 0.7rem;
+     
+   }
+ .forecast-card:last-child {
+  margin-right:1rem;
+}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="heading">Weather Analyzer</div>
+  <div class="container">
+    <div class="search-box">
+        <input type="search" class="search"placeholder="Search for location"id="search-input">
+        <button class="search-btn">
+        <i class="fa fa-search"></i></button>
+      </div>
+      <div class="content">
+        <div class="current_update">
+          
+          <div class="location">
+            <div class="country">
+              <div class="date_location">
+              <h2 class="cntry_name">Roorkee</h2>
+              <div class="day"></div>
+              </div>
+              <img src=''class="icon">
+            </div>
+            <div class="temp">
+              <div class="celcius">
+                <label>15</label>
+                <span>°C</span>
+              </div>
+              <div class="fahrenheit">  <label>34</label>
+                <span>°F</span></div>
+              
+            </div>
+            
+          </div>
+          
+        <div class="compact-details">
+          <div class="wind grid">
+            <div class="display-block">Wind</div>
+            <label class="display-inline-block"for="">13 km/h</label>
+        </div>
+        <div class="humidity grid">
+          <div class="display-block">Humidity</div>
+          <label class="display-inline-block" for="">57%</label>
+        </div>
+        <div class="visibility grid">
+          <div  class="display-block">Visibility</div>
+          <label  class="display-inline-block" for="">10km</label>
+        </div>
+        <div class="pressure grid">
+          <div  class="display-block">Pressure</div>
+          <label class="display-inline-block"for="">30in</label>
+        </div>
+        <div class="uv grid">
+          <div  class="display-block">UV</div>
+          <label class="display-inline-block" for="">5</label>
+        </div>
+        <div class="w_text grid">
+          <div  class="display-block">Weather</div>
+          <label class="display-inline-block"for="">Cloudy</label>
+        </div>
+       </div>
+      </div>
+      
+     <div class="forecast">
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-days">
+        <!-- Forecast cards will be dynamically added here -->
+      </div>
+     </div>
+      </div>
+
+      
+      
+        </div>
+      </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
